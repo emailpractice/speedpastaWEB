@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    /* 确保 header 占满整个容器的宽度 */
+
+    color: white;
+
+    position: relative;
+    top: -15px;
+
+}
+
+.logo {
+    width: 3.5em;
+
+    position: relative;
+    top: 5px;
+    left: -10px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+
+    padding: 2px 0;
+}
+
+.nav-item {
+    color: black;
+    text-decoration: none;
+    margin: 0 11px;
+    font-size: 7px;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #555;
+    /* 可選，為按鈕添加懸停效果 */
+}
+
+.hero {
+    background: url('./image/testtttttt (2).jpg') no-repeat center 80%/cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero .slogan {
+    width: 10em;
+
+    position: relative;
+    top: 40px;
+    left: -55px;
+}
+
+.hero .cta-btn {
+    padding: 3px 7px;
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 0.8em;
+    border-radius: 5px;
+
+    border: 1px solid rgb(0, 0, 0);
+
+
+}
+
+
+
+.ranking {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.ranking h2 {
+    margin-top: 0;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+
+.product p {
+    width: 65%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.advantage {
+    background-color: wheat;
+    padding: 20px;
+    text-align: center;
+}
+
+.advantageWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantageWrapper ion-icon {
+    font-size: 3em;
+}
+
+.advantage h2 {
+    margin-top: 0;
+}
+
+.advantage p {
+    margin: 10px;
+}
+
+.partners {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.partners h2 {
+    margin-top: 0;
+}
+
+.partners .logos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.partners img {
+    width: 30%;
+    height: auto;
+}
+
+.shop {
+    background: url('./image/holder.jpg') no-repeat center center/cover;
+    height: 300px;
+}
+
+.contact-form {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}

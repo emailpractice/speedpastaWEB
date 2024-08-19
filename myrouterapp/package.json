@@ -1,0 +1,21 @@
+{
+  "name": "hello-world",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "crypto": "^1.0.1",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "ecpay_aio_nodejs": "^1.0.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "googleapi": "^1.0.2",
+    "googleapis": "^140.0.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
+}
