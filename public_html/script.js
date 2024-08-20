@@ -19,7 +19,7 @@ let products = [];
 let cart = [];
 /*anchorbutton也在購物車區域是因為，按下購物車之後這兩個按鈕要消失 避免擋到購物車 */
 
-let elem_anchorbutton = document.querySelector('#cta-btn');
+
 let clickCount = 0;
 
 iconCart.addEventListener('click', () => {
@@ -101,9 +101,11 @@ listProductHTML.addEventListener('click', (event) => {
         let id_product = positionClick.parentElement.dataset.id;
         addToCart(id_product);
 
+
+
         ///按下選購按鈕之後，複製一個產品的照片<div>加入html。然後在等等add_fly_animation函數執行時再給這個div加上新的class來做動畫。
         let target_parent = event.target.parentNode;
-
+        console.log(target_parent)
         // Creating separate Image
         let img = target_parent.querySelector('.product_img');
         let flying_img = img.cloneNode();
