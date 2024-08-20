@@ -32,14 +32,14 @@ header {
     display: flex;
     justify-content: center;
 
-    padding: 2px 0;
+    padding: 1em 0;
 }
 
 .nav-item {
     color: black;
     text-decoration: none;
-    margin: 0 11px;
-    font-size: 7px;
+    margin: 0 1em;
+    font-size: 2vw;
     transition: color 0.3s;
 }
 
@@ -55,7 +55,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    color: white;
+
     text-align: center;
     padding: 20px;
 }
@@ -68,6 +68,10 @@ header {
     left: -55px;
 }
 
+.right_placeholder {
+    width: 67.2px;
+}
+
 .hero .cta-btn {
     padding: 3px 7px;
 
@@ -78,6 +82,9 @@ header {
 
     border: 1px solid rgb(0, 0, 0);
 
+    position: fixed;
+    right: 10px;
+
 
 }
 
@@ -85,53 +92,70 @@ header {
 
 .ranking {
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #F8EDE3;
+
     text-align: center;
+    color: #C5705D;
 }
 
 .ranking h2 {
     margin-top: 0;
+
 }
 
-.product {
+.ranking .product {
     display: flex;
     justify-content: center;
     margin: 8px 0;
+
 }
 
 
-.product p {
+.ranking .product p {
     width: 65%;
     margin-left: 5%;
     text-align: left;
+
 }
 
 .advantage {
-    background-color: wheat;
-    padding: 20px;
+    background-color: #DFD3C3;
+    padding: 30px;
     text-align: center;
-}
-
-.advantageWrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.advantageWrapper ion-icon {
-    font-size: 3em;
+    color: #C5705D;
 }
 
 .advantage h2 {
     margin-top: 0;
+
 }
+
+
+.advantageWrapper {
+    display: flex;
+    gap: 0.5em;
+    padding-bottom: 3em;
+
+}
+
+
+.advantageWrapper ion-icon {
+    font-size: 3em;
+    flex: 1;
+}
+
 
 .advantage p {
     margin: 10px;
+    font-size: 1.2em;
+    flex: 13;
+    text-align: left;
+    /* 確保文字從最左邊對齊 */
 }
 
 .partners {
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #D0B8A8;
     text-align: center;
 }
 
@@ -150,33 +174,331 @@ header {
     height: auto;
 }
 
-.shop {
-    background: url('./image/holder.jpg') no-repeat center center/cover;
-    height: 300px;
+
+
+.order_container {
+    position: relative;
+
+    width: 900px;
+    margin: auto;
+    max-width: 100vw;
+    text-align: center;
+    background-color: #d3c8bf;
+    transition: transform .5s;
+
+
 }
 
-.contact-form {
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-.contact-form input,
-.contact-form textarea {
+.TextOrderNow {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: none;
+    z-index: 3;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 2em;
+
+
 }
 
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #e8491d;
-    color: white;
-    border: none;
-    border-radius: 5px;
+.deliverrange {
+    position: relative;
+    top: 20px;
+    z-index: 3;
+    color: rgb(0, 0, 0);
+
+    font-size: 20px;
+}
+
+
+
+
+.icon-cart {
+    position: relative;
+    left: -15px;
+    color: #000000;
+
+    display: grid;
+    grid-template-columns: 4fr 3fr 1fr;
+
+    grid-template-areas:
+        "a b c";
+
+}
+
+.cartbg {
+    position: relative;
+    left: 110%;
+    width: 13%;
+    height: 66%;
+    display: inline-block;
+    /* Fit tightly around the SVG */
+    background-color: #ECECE4;
+    border: #d38c07 1px solid;
+    /* Background color */
+    border-radius: 50%;
+    /* Round background */
+    padding: 10px;
+    transition: .5s ease-in-out;
+    z-index: 5;
+
+    grid-area: b;
+
+}
+
+.cartbg.active {
+    left: 85%;
+    width: 35%;
+    border-radius: 10px;
+
+}
+
+
+
+.cartlogo:hover {
+    background-color: wheat;
+    border-radius: 155px;
+
+
+}
+
+.cartlogo {
+    position: relative;
+    left: 41.9%;
+    top: 15.5%;
+    width: 75%;
+    height: 90%;
     cursor: pointer;
+    grid-area: c;
+    z-index: 5;
+}
+
+
+
+.icon-cart span {
+    position: relative;
+    left: 72%;
+    top: -15px;
+
+    background-color: rgb(250, 213, 6);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 5;
+    border-radius: 50%;
+    color: #1b1b1b;
+    font-size: 80%;
+
+    grid-area: c;
+
+}
+
+
+
+
+.product_img {
+    width: 100%;
+    border-radius: 20px;
+
+    z-index: 4;
+    display: block;
+}
+
+/*處理*/
+.product_img :focus {
+    width: 190%;
+    filter: drop-shadow(10px -20px 30px #0009);
+    z-index: 3;
+}
+
+
+.flying-img {
+    position: absolute;
+    /* 使用 absolute 定位，relative會在移動的過程中干擾到其他東西的定位計算。所以absolute效能比較高 */
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    animation: fly_to_cart 1s ease-in-out;
+    will-change: transform;
+    /* 提示浏览器优化 */
+
+    z-index: 99;
+
+}
+
+@keyframes fly_to_cart {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(var(--left), 0) scale(1);
+    }
+
+    100% {
+        transform: translate(var(--left), var(--top)) scale(0.3);
+
+    }
+
+
+}
+
+
+
+.listProduct {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    z-index: 4;
+    position: relative;
+    padding-top: 25px;
+
+}
+
+@media screen and (max-width:767px) {
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+.listProduct .item {
+    background-color: #EEEEE6;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 21;
+
+    position: relative;
+}
+
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #20201f;
+    z-index: 3;
+}
+
+.listProduct .item .price {
+    letter-spacing: 7px;
+    font-size: medium;
+    color: #242423;
+}
+
+.listProduct .item button {
+    width: 5rem;
+    font-size: 1rem;
+    background-color: rgb(250, 213, 6);
+    color: rgb(3, 3, 3);
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.listProduct .item button:hover {
+    background-color: goldenrod;
+}
+
+/* cart */
+.cartTab {
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    z-index: 26;
+}
+
+body.showCart .cartTab {
+    right: 0;
+}
+
+/*transformx變得不能用了 只要使用 整個元素就會不見*/
+body.showCart .order_container {
+    margin-left: -7vw;
+
+
+}
+
+.cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab a {
+    background-color: #E8BC0E;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.3em;
+    line-height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #000;
+}
+
+.cartTab .close {
+    background-color: #eee;
+    outline: solid 1px #111111;
+    font-size: 1.3rem;
+
+}
+
+.listCart .cartItem img {
+    width: 100%;
+}
+
+.listCart .cartItem {
+    display: grid;
+    grid-template-columns: 70px 120px 110px 70px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listCart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+
+}
+
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+
+.listCart .cartItem:nth-child(even) {
+    background-color: rgba(190, 170, 170, 0.067);
+}
+
+.listCart {
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar {
+    width: 0;
 }
 
 footer {

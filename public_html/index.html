@@ -22,12 +22,14 @@
                 <a href="#ranking" class="nav-item">人氣排行</a>
                 <a href="#advantage" class="nav-item">服務賣點</a>
                 <a href="#reviews" class="nav-item">顧客評論</a>
-                <a href="#contact-form" class="nav-item">聯絡表單</a>
+                <a href="#aboutus" class="nav-item">聯絡方式</a>
             </nav>
+
+            <div class="right_placeholder"></div>
             <a href="#shop" class="cta-btn">立即點餐</a>
 
         </header>
-        <img class="slogan" src="./image/標語.png" alt="130 NT dollar get you a less than 20min delivery service">
+        <img class="slogan" src="./image/標語 (2).png" alt="130 NT dollar get you a less than 20min delivery service">
 
     </section>
 
@@ -55,7 +57,7 @@
 
 
         <h2>為什麼應該點餐？</h2>
-        <p>我們的外送服務更快、更省心。</p>
+
         <div class="advantageWrapper">
             <ion-icon name="checkmark-done-outline"></ion-icon>
             <p><strong>即時送達：</strong> 外送平台平均需要40分鐘才能將食物送到，而我們承諾在20分鐘內送達餐點，讓你更快享用美味。</p>
@@ -68,7 +70,7 @@
             <ion-icon name="checkmark-done-outline"></ion-icon>
             <p><strong>夜晚也能快速送達：</strong> 即使是深夜12點，我們也能保證在20分鐘內將餐點送到，不用再等外送員60分鐘以上，讓你安心享受美食。</p>
         </div>
-        </div>
+
     </section>
 
     <section class="partners">
@@ -80,24 +82,49 @@
         </div>
     </section>
 
-    <section class="shop" id="shop">
-    </section>
 
-    <section class="contact-form">
-        <form>
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="email" name="email" placeholder="Your Email">
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
 
-    <footer>
-        <p>餐廳聯絡方式: 123-456-7890 | email@example.com</p>
+    <section class="order_container" id="the_order_page">
+        <!--縮小範圍 一定要確保快速送到 不能來不及送就說賣完了 人手不夠。 這跟品牌價值衝突 從中正、中山、萬華、大同、大安區 變成中正萬華大安?-->
+        <article class="deliverrange"> *外送範圍只有台北市的中正、大安區</article>
+        <h2 class="TextOrderNow">立即點餐</h2>
+
+        <div class="icon-cart">
+            <div class="cartbg"></div> <!--用這個把logo包起來是因為想要logo背後有個白色圓圈背景。 但是直接把背景加在logo上，logo的角落會稍微被遮到-->
+            <IMG class="cartlogo" src="./image/CART.webp"> </IMG>
+            <span>0</span>
+        </div>
+
+
+        <div class="listProduct hidden">
+
+        </div>
+
+
+
+
+        <div class="cartTab">
+            <h1>購物車</h1>
+            <div class="listCart">
+
+            </div>
+            <div class="btn">
+                <button class="close">關閉</button>
+                <a id=go_to_checkout href="whereToDeliver.html">
+                    結帳
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <footer id="aboutus">
+        <p>聯絡方式: 0956909890 | speedpasta0427@gmail.com</p>
     </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
+<script defer src="script.js" type="module"></script>
 
 </html>

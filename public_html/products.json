@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "紅醬香煎培根",
+        "price": 149,
+        "image": "./image/redbaconMain.webp",
+        "tag": "redbacon"
+    },
+    {
+        "id": 2,
+        "name": "紅醬金黃雞腿",
+        "price": 149,
+        "image": "./image/redchickenMain.webp",
+        "tag": "redchicken"
+    },
+    {
+        "id": 3,
+        "name": "白醬香煎培根",
+        "price": 149,
+        "image": "./image/creambaconMain.webp",
+        "tag": "creambacon"
+    },
+    {
+        "id": 4,
+        "name": "白醬金黃雞腿",
+        "price": 149,
+        "image": "./image/creamchickenMain.webp",
+        "tag": "creamchicken"
+    },
+    {
+        "id": 5,
+        "name": "青醬香煎培根",
+        "price": 149,
+        "image": "./image/pestobaconMain.webp",
+        "tag": "pestobacon"
+    },
+    {
+        "id": 6,
+        "name": "青醬金黃雞腿",
+        "price": 149,
+        "image": "./image/pestochickenMain.webp",
+        "tag": "pestochicken"
+    }
+]
