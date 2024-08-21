@@ -87,7 +87,7 @@ const addDataToHTML = () => {
                     <div class="overlay"></div>
                 </div>
                 <h2>${product.name}</h2>
-                <div class="price">$${product.price}</div>
+
                 <button class="addCart"> 選購</button>
                 `;
 
